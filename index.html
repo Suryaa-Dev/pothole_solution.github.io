@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pothole Killer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>PotholeKILLER</h1>
+        </div>
+        <div class="nav">
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Service</a></li>
+            <li><a href="">Contact</a></li>
+        </div>
+    </header>
+
+
+    <div class="hero-container">
+        <div class="hero-img">
+          <img src="./65608e5863cbcaa1ad2ee36c0ea04850.jpg" alt="Hero Image">
+        </div>
+        <div class="hero-content">
+          <h1>Welcome to Bad Roads Reporting</h1>
+          <p>Do you encounter rough roads on your daily commute? Take action now and join our community to report bad roads in your area. Together, let's make our roads safer and smoother for everyone!</p>
+          <button>Get Started</button>
+        </div>
+    </div>
+
+    <section class="uploadation">
+      <div class="uploadation-heading">
+        <h2>Report Bad Roads</h2>
+        <p>Help us identify and improve road conditions in your area by reporting bad roads.</p>
+      </div>
+    
+        <form id="upload-form">
+            <input type="file" id="image-upload" accept="image/*" required>
+            <input type="text" id="location" placeholder="Location" required>
+            <textarea id="description" placeholder="Description" required></textarea>
+
+            <div class="issue-type">
+              <label><input type="radio" name="issue" value="Street Potholes">Potholes</label>
+              <label><input type="radio" name="issue" value="Street Lamp">Lamps</label>
+              <label><input type="radio" name="issue" value="Plantation Required">Plantation</label>
+            </div>
+
+            <button type="submit">Upload</button>
+          </form>
+          
+          <section class="reported-roads-section">
+            <h2>Community Reports</h2>
+            <div class="road-cards" id="road-cards">
+              <!-- Uploaded images will be displayed here dynamically -->
+            </div>
+          </section>
+                  
+    </section>
+
+    <section class="contact-section">
+      <div class="contact-container">
+          <h2>Contact Us</h2>
+          <form id="contact-form">
+              <div class="form-group">
+                  <label for="name">Your Name:</label>
+                  <input type="text" id="name" name="name" required>
+              </div>
+              <div class="form-group">
+                  <label for="email">Your Email:</label>
+                  <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                  <label for="message">Message:</label>
+                  <textarea id="message" name="message" rows="5" required></textarea>
+              </div>
+              <button type="submit">Send Message</button>
+          </form>
+      </div>
+  </section>
+  
+
+    <section class="faq-section">
+        <h2>FAQ  :- Frequently Asked Questions</h2>
+        <div class="faq-item">
+          <h3>How can I report a bad road?</h3>
+          <p>To report a bad road, simply navigate to our "Service" page and fill out the reporting form with details about the location and condition of the road.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Are there any fees for using your service?</h3>
+          <p>No, our service is completely free for users. We rely on community contributions to help improve road conditions.</p>
+        </div>
+        <!-- Add more FAQ items as needed -->
+      </section>
+
+    <footer>
+        <div class="container footer-content">
+          <p>&copy; 2024 Bad Roads Reporting</p>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Contact Us</a>
+        </div>
+      </footer>
+
+
+      <script src="script.js"></script>
+</body>
+</html>
